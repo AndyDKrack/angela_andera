@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Slabo+27px&family=Titillium+Web:wght@300&display=swap');
+    /*  font-family: 'Titillium Web', sans-serif; */
+
+/*-------------------------------------------------------------------*/
+    body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: aliceblue;
+}
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 8px 48px 8px 16px;
+    }
+
+            .topnavi {
+                display: flex;
+                flex-direction: row;
+            }
+                    .navi {
+                        text-decoration: none;
+                        color: royalblue;
+                        font-size: x-large;
+                        padding: 0px 10px ;
+                    }
+    .container1,
+    .container2,
+    .container3 {
+        border: solid;
+    }
+
+    .hero,
+    .foot {
+        border: solid;
+    }
