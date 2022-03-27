@@ -45,9 +45,16 @@
 
     /*-------------------------------------------------------------------*/
                             
+    .social-bar-image {
+        background-image: url("images/socialbarpic.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .social-bar {
         display: flex;
         justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.267);
     }
 
             .social-links {
@@ -55,6 +62,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap: 20px;
+                padding: 0;
             }
 
                     .social {
@@ -105,13 +113,58 @@
                 width: 80%;
             }
 
-    .hero {
+    .hero-image {
         border: solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0px;
+        background-image: url("images/heropic.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+
+        .hero-image-box {
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            gap: 8px;
+            background-color: rgba(255, 255, 255, 0.658);
+        }
+
+                .hero-title {
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .hero-text {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 16px;
+                }
+
+
+                .consult-button {
+                    background-color: royalblue;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 8px;
+                    font-size: 18px;
+                    color: beige;
+                    width: 100%;
+                }
 /*-------------------------------------------------------------------*/
 .foot {
-    background-color: grey;
+    background-color: black;
     font-size: small;
+    color: aqua;
 }
 
         .copyright {
@@ -119,3 +172,11 @@
             font-weight: 600;
             padding-bottom: 16px;
         }
+
+/*-consult.html[consultation page]-----------------------------------*/
+
+.consultation-form-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;   
+}
