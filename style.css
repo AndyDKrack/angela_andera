@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Slabo+27px&family=Titillium+Web:wght@300&display=swap');
     /*  font-family: 'Titillium Web', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Neucha&family=Slabo+27px&family=Titillium+Web:wght@300&display=swap');
+    /*  font-family: 'Neucha', cursive; */
 
 /*-------------------------------------------------------------------*/
     body {
@@ -12,31 +14,108 @@
     background-color: aliceblue;
 }
 
-    .head {
+/*-------------------------------------------------------------------*/
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 8px 48px 8px 16px;
+            background-color: rgb(201, 225, 247);
+            box-shadow: inset 0 -10px 20px -5px royalblue;
+        }
+
+                .topnavi {
+                    display: flex;
+                    flex-direction: row;
+                }
+                        .navi {
+                            text-decoration: none;
+                            color: royalblue;
+                            font-size: x-large;
+                            padding: 0px 10px ;
+                            font-weight: bold;
+                        }
+
+                                .logo {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+    /*-------------------------------------------------------------------*/
+                            
+    .social-bar {
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 8px 48px 8px 16px;
+        justify-content: space-around;
     }
 
-            .topnavi {
+            .social-links {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
             }
-                    .navi {
-                        text-decoration: none;
-                        color: royalblue;
-                        font-size: x-large;
-                        padding: 0px 10px ;
+
+                    .social {
+                        max-width: 40px;
                     }
-    .container1,
-    .container2,
-    .container3 {
-        border: solid;
+
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
-    .hero,
-    .foot {
+            .banner {
+                padding: 16px;
+            }
+
+                #banner-image {
+                    padding: 0px;
+                    min-width: 200px;
+                }
+
+                    .banner-pic {
+                        width: 100%;
+                        height: 100%;
+                    }
+                
+                #banner-text {
+                    max-width: 400px;
+                    min-width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-family: 'Neucha', cursive;
+                    font-size: 5vw;
+                    text-align: center;
+                }
+
+    .container2 {
+        font-size: 19px;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+            .con2-text {
+                width: 80%;
+            }
+
+    .hero {
         border: solid;
     }
+/*-------------------------------------------------------------------*/
+.foot {
+    background-color: grey;
+    font-size: small;
+}
+
+        .copyright {
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 16px;
+        }
